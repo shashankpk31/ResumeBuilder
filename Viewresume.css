@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    /* /* list-style: none; */
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "head head head";
+    position: relative;
+}
+
+.head {
+    display: flex;
+    z-index: 2;
+    grid-area: head;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+    margin-left: 4%;
+}
+
+.imgcode {
+    border-radius: 50%;
+    border: 2px solid black;
+    z-index: 3;
+    width: 20%;
+}
+
+.name {
+    padding: 5%;
+    background-color: #ff9c00;
+    width: 100%;
+    margin-right: 2%;
+    margin-left: -6%;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.name p {
+    padding-left: 4%;
+}
+
+.contl {
+    background-color: #ffffff;
+    color: black;
+    padding: 35% 4% 1% 1%;
+}
+
+.contl-item {
+    padding: 2%;
+}
+
+ul {
+    list-style: none;
+    padding-left: 4%;
+}
+
+.ul li::before {
+    content: "\2022";
+    color: #ff9c00;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.itemhead {
+    background-color: #ff9c00;
+    padding: 1%;
+    text-align: center;
+    width: 50%;
+    font-weight: 800;
+}
+
+.itemcontent {
+    font: 30px;
+    padding: 2%;
+}
+
+.contr {
+    background-color: #29292b;
+    color: rgb(56, 55, 55);
+    padding: 64% 1% 1% 4%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.itemhead2 {
+    border: 3px solid #ff9c00;
+    padding: 3%;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 2%;
+}
+
+h3 {
+    font-size: initial;
+}
+
+i {
+    color: #ff9c00;
+}
+
+.itemcontent2 {
+    padding: 5%;
+    color: darkgray;
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        display: grid;
+        grid-template-columns: 55% 45%;
+        grid-template-areas: "head head";
+        position: relative;
+    }
+
+    .contl {
+        background-color: #ffffff;
+        color: black;
+        padding: 40% 4% 1% 1%;
+    }
+
+    .contr {
+        padding: 50% 1% 1% 4%;
+    }
+
+    .itemcontent2 {
+        padding: 0%;
+        color: darkgray;
+        margin: 10% 0% 10% 0%;
+    }
+}
